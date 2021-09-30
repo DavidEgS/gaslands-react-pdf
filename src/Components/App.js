@@ -1,13 +1,16 @@
 
 import '../App.css';
 import Header from './Header/Header.js';
+import Form from './Form';
+
 
 function App() {
   return (
     <div className="App">
-      hello Ben
       < Header />
+      <Form />
     </div>
+    
   );
 }
 
