@@ -1,0 +1,21 @@
+.banner {
+  min-width: 100vw;
+}
+
+.banner h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'EuropaBrush';
+}
+
+.checkerboard {
+  text-align: center;
+  color: blue;
+  height: 8em;
+  width: 100vw;
+  background-color: #eee;
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+  linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  }
