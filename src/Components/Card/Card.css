@@ -1,0 +1,63 @@
+.card {
+  height: 53mm;
+  width: 73mm;
+  border: 1mm solid #000;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.title {
+  margin-top: 16px;
+  border-top: 1px dashed #000;
+  padding-top: 2px;
+}
+
+.vehicledesc {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.flavour {
+  margin-right: 129px;
+}
+
+.hull {
+  display: flex;
+}
+
+.hulltitle {
+  writing-mode: vertical-lr;
+  transform:rotate(180deg)
+}
+
+.emptybox {
+  height: 16mm;
+  width: 50mm;
+  border: 1px solid #000;
+}
+
+.gear {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gearbox {
+  height: 16mm;
+  width: 16mm;
+  border: 1px solid #000;
+  float: right;
+}
+
+.infosection {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 4px;
+}
+
+.infos {
+  font-weight: bold;
+}
+
+.cansline {
+  border-bottom: 1px dashed #000;
+}
