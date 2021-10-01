@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Dropdown from 'react-bootstrap/Dropdown'
 
 const Form = () => {
 
   const [vehicle, setVehicle] = useState("all vehicles");
 
   const handleSelect = (e) => {
-    console.log(e);
+    console.log(e.target.value);
+    setVehicle(e.value)
+    // console.log(vehicle);
   }
 
   return (
-    <DropdownButton onSelect={handleSelect}>
-      <Dropdown.Item eventKey="car">Car</Dropdown.Item>
-      <Dropdown.Item eventKey="truck">Truck</Dropdown.Item>
-    </DropdownButton>
+    <form>
+      <select value={vehicle} onChange={handleSelect}>
+        <option value="car">Car</option>
+        <option value="truck">Truck</option>
+      </select>
+    </form>
   )
 }
 
