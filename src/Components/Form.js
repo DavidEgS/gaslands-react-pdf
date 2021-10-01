@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Vehicles from './VehicleObject';
 
 const Form = () => {
 
@@ -6,15 +7,14 @@ const Form = () => {
 
   const handleSelect = (e) => {
     console.log(e.target.value);
-    setVehicle(e.value)
-    // console.log(vehicle);
+    setVehicle(e.target.value);
   }
 
   return (
     <form>
       <select value={vehicle} onChange={handleSelect}>
-        <option value="car">Car</option>
-        <option value="truck">Truck</option>
+        <option value="car">{Vehicles.car.type}</option>
+        <option value="performanceCar">{Vehicles.performanceCar.type}</option>
       </select>
     </form>
   )

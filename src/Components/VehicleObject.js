@@ -1,14 +1,16 @@
-const vehicles = {
+const Vehicles = {
   car: {
-    weight: middleweight,
+    type: 'Car',
+    weight: 'middleweight',
     crew: 2,
-    halfHull: middleweight,
-    maxgear: middleweight,
+    halfHull: 'middleweight',
+    maxgear: 'middleweight',
     handling: 3
   },
 
-  performaceCar: {
-    weight: middleweight,
+  performanceCar: {
+    type: 'Performance Car',
+    weight: 'middleweight',
     crew: 1,
     halfHull: 4,
     maxgear: 6,
@@ -16,7 +18,7 @@ const vehicles = {
   },
 
   truck: {
-    weight: middleweight,
+    weight: 'middleweight',
     crew: 3,
     halfHull: 6,
     maxgear: 4,
@@ -24,7 +26,7 @@ const vehicles = {
   },
 
   heavyTruck: {
-    weight: heavyweight,
+    weight: 'heavyweight',
     crew: 4,
     halfHull: 7,
     maxgear: 3,
@@ -32,7 +34,7 @@ const vehicles = {
   },
 
   buggy: {
-    weight: lightweight,
+    weight: 'lightweight',
     crew: 2,
     halfHull: 3,
     maxgear: 6,
@@ -40,7 +42,7 @@ const vehicles = {
   },
 
   bus: {
-    weight: heavyweight,
+    weight: 'heavyweight',
     crew: 8,
     halfHull: 8,
     maxgear: 3,
@@ -48,7 +50,7 @@ const vehicles = {
   },
 
   bikeWithSidecar: {
-    weight: lightweight,
+    weight: 'lightweight',
     crew: 2,
     halfHull: 2,
     maxgear: 6,
@@ -56,7 +58,7 @@ const vehicles = {
   },
 
   dragRacer: {
-    weight: lightweight,
+    weight: 'lightweight',
     crew: 1,
     halfHull: 2,
     maxgear: 6,
@@ -64,7 +66,7 @@ const vehicles = {
   },
 
   gyrocopter: {
-    weight: middleweight,
+    weight: 'middleweight',
     crew: 1,
     halfHull: 2,
     maxgear: 6,
@@ -72,7 +74,7 @@ const vehicles = {
   },
 
   iceCreamTruck: {
-    weight: heavyweight,
+    weight: 'heavyweight',
     crew: 2,
     halfHull: 5,
     maxgear: 4,
@@ -80,7 +82,7 @@ const vehicles = {
   },
 
   ambulance: {
-    weight: middleweight,
+    weight: 'middleweight',
     crew: 3,
     halfHull: 4,
     maxgear: 4,
@@ -88,7 +90,7 @@ const vehicles = {
   },
 
   helicopter: {
-    weight: heavyweight,
+    weight: 'heavyweight',
     crew: 3,
     halfHull: 4,
     maxgear: 4,
@@ -96,7 +98,7 @@ const vehicles = {
   },
 
   tank: {
-    weight: heavyweight,
+    weight: 'heavyweight',
     crew: 3,
     halfHull: 10,
     maxgear: 3,
@@ -104,10 +106,12 @@ const vehicles = {
   },
 
   warRig: {
-    weight: heavyweight,
+    weight: 'heavyweight',
     crew: 5,
     halfHull: 13,
     maxgear: 4,
     handling: 2
   }
 }
+
+export default Vehicles;
