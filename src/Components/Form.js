@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { alignPropType } from 'react-bootstrap/esm/DropdownMenu';
 import Vehicles from './VehicleObject';
 
 const Form = () => {
@@ -11,29 +12,38 @@ const Form = () => {
   }
 
   // dynamically generate the option tag for each of the different vehicles
-
+  // const keys = Object.keys(Vehicles) () => {
+  // };
 
   const keys = (Vehicles) => {
     const keysList = Object.keys(Vehicles);
     // console.log(keysList);
-    keysList.forEach((key) => {
+    const tag = keysList.map((key) => {
       // console.log(key)
-      const option = `<option value="#{key}">#{key}</option>`;
-      console.log(option);
-    })   
-    
-  }
 
-  keys(Vehicles);
+      const formSelect = <option>{key}</option>
+     
+      return (
+       formSelect
+      );
+      // const option = <option value={key}>{key}</option>;
+      // console.log(option.props.value);
+      // console.log(option.props.value);
+    })  
+    return tag;
+  }
 
   return (
     <form>
       <select value={vehicle} onChange={handleSelect}>
-        <option value="car">{Vehicles.car.type}</option>
-        <option value="performanceCar">{Vehicles.performanceCar.type}</option>
+        { keys(Vehicles) }
+        {/* <option value="performanceCar">{Vehicles.performanceCar.type}</option> */}
       </select>
-    </form>
+    </form> 
   )
 }
 
-export default Form
+export default Form;
+
+
+

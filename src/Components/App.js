@@ -1,14 +1,14 @@
 
 import '../App.css';
 import Header from './Header/Header.js';
-import FormSelect from './Form';
+import Form from './Form';
 
 
 function App() {
   return (
     <div className="App">
-      < Header />
-      <FormSelect />
+      <Header />
+      <Form />
     </div>
     
   );
