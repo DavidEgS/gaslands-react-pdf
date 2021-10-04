@@ -1,0 +1,6 @@
+.a4page {
+  height: 297mm;
+  width: 210mm;
+  display: flex;
+  flex-wrap: wrap;
+}
