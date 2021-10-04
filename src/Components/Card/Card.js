@@ -1,26 +1,29 @@
 import './Card.css'
+import VehicleObject from "../VehicleObject";
 
-const Card = ({printDocument}) => {
+const Card = ({vehicle}) => {
+  const hullBoxes = new Array(VehicleObject[vehicle].halfHull).fill(0)
+  console.log(hullBoxes)
   return (
-    <div className="card" id="divToPrint" onClick={printDocument}>
+    <div className="card" >
       <div className="title">
-        <div className="vehicledesc">car</div>
-        <div className="vehicledesc">middleweight</div>
+        <div className="vehicledesc">{VehicleObject[vehicle].type}</div>
+        <div className="vehicledesc">{VehicleObject[vehicle].weight}</div>
       </div>
       <div className="hull">
         <div className="hulltitle">hull</div>
         <div className="boxholder">
-          <div className="halfhull">xxxxx</div>
-          <div className="halfhull">xxxxx</div>
+          <div className="halfhull"> {hullBoxes.map(x => <div className="hullbox">&nbsp;</div>) } </div>
+          <div className="halfhull"> {hullBoxes.map(x => <div className="hullbox">&nbsp;</div>) } </div>
         </div>
       </div>
       <div className="gear">
         <div className="emptybox"></div>
-        <div className="gearbox"></div>
+        <div className="gearbox"><p>MAX GEAR</p><p> { VehicleObject[vehicle].maxGear } </p></div>
       </div>
       <div className="infosection">
-        <div className="infos">HANDLING: 3</div>
-        <div className="infos">CREW: 2</div>
+        <div className="infos">HANDLING: {VehicleObject[vehicle].handling} </div>
+        <div className="infos">CREW: {VehicleObject[vehicle].crew} </div>
         <div className="infos">CANS: <span className="cansline">&nbsp;&nbsp;</span> </div>
       </div>
     </div>

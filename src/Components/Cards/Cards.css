@@ -3,4 +3,5 @@
   width: 210mm;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
