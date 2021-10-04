@@ -4,7 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
 const Form = () => {
 
-  const [vehicle, setVehicle] = useState("all vehicles");
+  const [vehicle, setVehicle] = useState(['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car']);
 
   const handleSelect = (e) => {
     console.log(e);
