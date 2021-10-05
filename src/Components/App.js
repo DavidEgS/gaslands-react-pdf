@@ -9,7 +9,7 @@ import html2canvas from 'html2canvas';
 
 
 function App() {
-  const [vehicle, setVehicle] = useState(['car', 'car', 'car', 'car', 'car', 'car', 'car', 'car']);
+  const [vehicles, setVehicles] = useState(['car', 'truck', 'car', 'car', 'car', 'car', 'car', 'car']);
 
   const printDocument = () => {
     const input = document.getElementById('divToPrint');
@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="App">
       < Header />
-      <Form vehicle vehicle={vehicle} setVehicle={setVehicle}/>
-      <Cards printDocument={printDocument} vehicle={vehicle} setVehicle={setVehicle} />
+      <Form vehicle vehicles={vehicles} setVehicles={setVehicles}/>
+      <Cards printDocument={printDocument} vehicles={vehicles} setVehicles={setVehicles} printDocument={printDocument} />
     </div>
 
   );

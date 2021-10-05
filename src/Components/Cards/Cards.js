@@ -1,18 +1,17 @@
 import { useState } from "react";
 import Card from '../Card/Card';
 import Form from '../Form';
+import './Cards.css'
 
-const Cards = ({ vehicle, setVehicle }) => {
-  // const vehicleList = vehicle.map((broom, index) =>
-  //     < Card key={index} />
-  //   )
-  // const tingy = vehicle.map((car, index) => <Card key={index} />);
+const Cards = ({ vehicles, setVehicles, printDocument }) => {
+
+  const tingy = vehicles.map((car, index) => <Card key={index} vehicle = {car} />);
   // console.log(tingy)
   return (
     <div className="cards">
-      <button>Click me!</button>
-      <div className="a4page">
-      {/* {tingy } */}
+      <button onClick={printDocument}>Click me!</button>
+      <div className="a4page" id="divToPrint">
+      { tingy }
 
       </div>
     </div>
