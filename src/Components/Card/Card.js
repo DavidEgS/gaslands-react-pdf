@@ -11,7 +11,7 @@ const Card = ({vehicle}) => {
         <div className="vehicledesc">{VehicleObject[vehicle].weight}</div>
       </div>
       <div className="hull">
-        <div className="hulltitle">hull</div>
+        <div className="hulltitle">HULL</div>
         <div className="boxholder">
           <div className="halfhull"> {hullBoxes.map(x => <div className="hullbox">&nbsp;</div>) } </div>
           <div className="halfhull"> {hullBoxes.map(x => <div className="hullbox">&nbsp;</div>) } </div>
@@ -19,12 +19,12 @@ const Card = ({vehicle}) => {
       </div>
       <div className="gear">
         <div className="emptybox"></div>
-        <div className="gearbox"><p>MAX GEAR</p><p> { VehicleObject[vehicle].maxGear } </p></div>
+        <div className="gearbox"><div>MAX GEAR</div><div class="big-num"> { VehicleObject[vehicle].maxGear } </div></div>
       </div>
       <div className="infosection">
-        <div className="infos">HANDLING: {VehicleObject[vehicle].handling} </div>
-        <div className="infos">CREW: {VehicleObject[vehicle].crew} </div>
-        <div className="infos">CANS: <span className="cansline">&nbsp;&nbsp;</span> </div>
+        <div className="infos">Handling: {VehicleObject[vehicle].handling} </div>
+        <div className="infos">Crew: {VehicleObject[vehicle].crew} </div>
+        <div className="infos">Cans: _ _ _ </div>
       </div>
     </div>
    );

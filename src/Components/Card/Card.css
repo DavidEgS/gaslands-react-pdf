@@ -3,13 +3,16 @@
   width: 73mm;
   border: 1mm solid #000;
   font-size: 12px;
+  font-weight: bold;
   padding: 8px;
 }
 
 .title {
-  margin-top: 16px;
-  border-top: 1px dashed #000;
-  padding-top: 2px;
+  margin-top: 9mm                                                                                                                                                                                                                            ;
+  border-top: 2px dashed #000;
+  padding-top: 2mm;
+  display: flex;
+  justify-content: space-between;
 }
 
 .vehicledesc {
@@ -22,12 +25,15 @@
 }
 
 .hull {
+  margin-top: 2mm;
   display: flex;
 }
 
 .hulltitle {
+  padding: 3px 1px 3px 0px;
   writing-mode: vertical-lr;
-  transform:rotate(180deg)
+  font-weight: bold;
+  transform:rotate(180deg);
 }
 
 .halfhull {
@@ -35,7 +41,7 @@
 }
 
 .hullbox {
-  border: 1px solid #000;
+  border: 2px solid #5a5a5a;
   height: 3mm;
   width: 3mm;
   margin: 2px;
@@ -44,25 +50,32 @@
 .emptybox {
   height: 16mm;
   width: 50mm;
-  border: 1px solid #000;
+  border: 2px solid #5a5a5a;
 }
 
 .gear {
+  margin-top: 2mm;
   display: flex;
   justify-content: space-between;
 }
 
 .gearbox {
+  font-size: 10px;
   height: 16mm;
   width: 16mm;
-  border: 1px solid #000;
+  border: 2px solid #5a5a5a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
+.big-num {
+  font-size: 24px;
+}
+
 .infosection {
+  margin-top: 2mm;
   display: flex;
   justify-content: space-between;
   padding-right: 4px;
@@ -73,5 +86,6 @@
 }
 
 .cansline {
-  border-bottom: 1px dashed #000;
+  border-bottom: 2px dashed #000;
+  width: 12mm;
 }
