@@ -59,7 +59,8 @@ const VehicleObject = {
     crew: 2,
     halfHull: 2,
     maxGear: 6,
-    handling: 5
+    handling: 5,
+    notes: 'full throttle, pivot'
   },
 
   dragRacer: {
@@ -68,7 +69,8 @@ const VehicleObject = {
     crew: 1,
     halfHull: 2,
     maxGear: 6,
-    handling: 4
+    handling: 4,
+    notes: 'jet engineer'
   },
 
   gyrocopter: {
@@ -77,7 +79,8 @@ const VehicleObject = {
     crew: 1,
     halfHull: 2,
     maxGear: 6,
-    handling: 4
+    handling: 4,
+    notes: 'airwolf, airborne'
   },
 
   iceCreamTruck: {
@@ -86,7 +89,8 @@ const VehicleObject = {
     crew: 2,
     halfHull: 5,
     maxGear: 4,
-    handling: 2
+    handling: 2,
+    notes: 'infuriating jingle'
   },
 
   ambulance: {
@@ -95,7 +99,8 @@ const VehicleObject = {
     crew: 3,
     halfHull: 4,
     maxGear: 4,
-    handling: 3
+    handling: 3,
+    notes: 'uppers, downers'
   },
 
   helicopter: {
@@ -104,7 +109,8 @@ const VehicleObject = {
     crew: 3,
     halfHull: 4,
     maxGear: 4,
-    handling: 3
+    handling: 3,
+    notes: 'airwolf, airborne'
   },
 
   tank: {
@@ -113,7 +119,8 @@ const VehicleObject = {
     crew: 3,
     halfHull: 10,
     maxGear: 3,
-    handling: 4
+    handling: 4,
+    notes: 'pivot, all terrain, up and over'
   },
 
   warRig: {
@@ -122,7 +129,8 @@ const VehicleObject = {
     crew: 5,
     halfHull: 13,
     maxGear: 4,
-    handling: 2
+    handling: 2,
+    notes: 'articulated, ponderous, piledriver'
   }
 }
 
