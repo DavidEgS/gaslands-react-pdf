@@ -5,6 +5,7 @@ import './Cards.css'
 
 const Cards = ({ vehicles, setVehicles, printDocument }) => {
 
+  console.log(vehicles);
   const tingy = vehicles.map((car, index) => <Card key={index} vehicle = {car} />);
   // console.log(tingy)
   return (
