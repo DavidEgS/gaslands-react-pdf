@@ -84,7 +84,7 @@ const VehicleObject = {
   },
 
   iceCreamTruck: {
-    Type: 'Ice Cream Truck',
+    type: 'Ice Cream Truck',
     weight: 'heavyweight',
     crew: 2,
     halfHull: 5,
